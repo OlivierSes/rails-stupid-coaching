@@ -1,7 +1,25 @@
-<h1>Your question was </h1>
+<div class="text-center">
 
-<%= @question %>
+  <h1>Your question was </h1>
 
-<h1> Here is your answer mofo</h1>
+  <div class="container">
+    <h2>
+    <%= @question %>
+    </h2>
+  </div>
 
-<%= @answer %>
+  <h1> Here is your answer mofo </h1>
+
+  <div class="container">
+    <h2>
+      <%= @answer %>
+    </h2>
+  </div>
+
+  <div style="margin-top: 20px;">
+  <i class="fa fa-question-circle" aria-hidden="true"></i>
+  <%= link_to "Ask me another question bro", ask_path %>
+  <i class="fa fa-question-circle" aria-hidden="true"></i>
+  </div>
+
+</div>
